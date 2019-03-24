@@ -1,4 +1,4 @@
-FROM golang
+docker/dockerfileGoFROM golang
 WORKDIR /usr/src/app
 ADD . .
 RUN go build -o src/hello src/hello.go
