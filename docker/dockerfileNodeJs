@@ -2,3 +2,8 @@ FROM node:8
 WORKDIR /usr/src/app
 COPY . .
 CMD [ "node", "src/app.js" ]
+
+#docker build -f docker/dockerfileNodeJs -t jzhifu/node-web-app .
+#docker run -d jzhifu/node-web-app
+#docker tag 05579a7a5569 jzhifu/helloworld:v1
+#docker push image jzhifu/helloworld:v1
