@@ -1,0 +1,12 @@
+from java:8
+WORKDIR /usr/src/app
+COPY . .
+RUN javac src/HelloWorld.java
+RUN cd src
+CMD [ "java","-cp","./src","HelloWorld" ]
+
+
+#docker build -f docker/dockerfileJava -t jzhifu/java-helloworld .
+#docker run jzhifu/java-helloworld:latest
+#docker tag 309253eeeee9 jzhifu/java-helloworld:v1
+#docker image push jzhifu/java-helloworld:v1
